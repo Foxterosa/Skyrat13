@@ -529,7 +529,7 @@
 	icon_state = "hardsuit0-sec"
 	item_state = "sec_helm"
 	hardsuit_type = "sec"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 30,"energy" = 40, "bomb" = 20, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20) //skyrat edit
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 30, "energy" = 40, "bomb" = 20, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20) //skyrat edit
 
 /obj/item/clothing/suit/space/hardsuit/security
 	icon_state = "hardsuit-sec"
