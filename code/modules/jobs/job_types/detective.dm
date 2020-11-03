@@ -39,8 +39,8 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	head = /obj/item/clothing/head/fedora/det_hat
-	l_pocket = /obj/item/toy/crayon/white
-	r_pocket = /obj/item/restraints/handcuffs
+	l_pocket = /obj/item/restraints/handcuffs
+	r_pocket = /obj/item/toy/crayon/white
 	backpack_contents = list(/obj/item/storage/box/evidence=1,\
 		/obj/item/detective_scanner=1,\
 		/obj/item/melee/classic_baton/telescopic=1,\
