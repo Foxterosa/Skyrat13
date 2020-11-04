@@ -46,6 +46,7 @@ matrix:
         - tools/travis/install_byond.sh
         - source $HOME/BYOND/byond/bin/byondsetup
       before_script:
+        - chmod +x tools/travis/template_dm_generator.py
         - tools/travis/template_dm_generator.py
       script:
         - tools/travis/dm.sh -DTRAVISBUILDING -DTRAVISTESTING -DALL_MAPS tgstation.dme
