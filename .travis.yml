@@ -49,7 +49,9 @@ matrix:
         - chmod +x tools/travis/template_dm_generator.py
         - tools/travis/template_dm_generator.py
       script:
+        - chmod +x tools/travis/dm.sh
         - tools/travis/dm.sh -DTRAVISBUILDING -DTRAVISTESTING -DALL_MAPS tgstation.dme
+        
 
     - name: "Compile and Run Tests"
       addons:
