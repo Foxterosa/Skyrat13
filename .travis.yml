@@ -71,7 +71,7 @@ matrix:
           - $HOME/BYOND
           - $HOME/libmariadb
       install:
-        - chmod +x 777 /
+        - chmod +x *
         - tools/travis/install_byond.sh
         - source $HOME/BYOND/byond/bin/byondsetup
         - tools/travis/install_libmariadb.sh
