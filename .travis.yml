@@ -86,6 +86,7 @@ matrix:
         - chmod +x tools/travis/build_bsql.sh
         - tools/travis/build_bsql.sh
       script:
+        - chmod +x tools/travis/dm.sh
         - tools/travis/dm.sh -DTRAVISBUILDING tgstation.dme || travis_terminate 1
         - chmod +x tools/travis/run_server.sh
         - tools/travis/run_server.sh
