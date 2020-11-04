@@ -18,10 +18,14 @@ matrix:
             - python3-setuptools
       install:
         - chmod +x tools/travis/install_build_tools.sh
+        - tools/travis/install_build_tools.sh
         - chmod +x tools/travis/install_dreamchecker.sh
+        - tools/travis/install_dreamchecker.sh
       script:
         - chmod +rwx tools/travis/check_filedirs.sh tgstation.dme
+        - tools/travis/check_filedirs.sh tgstation.dme
         - chmod +rwx tools/travis/check_changelogs.sh
+        - tools/travis/check_changelogs.sh
         - find . -name "*.php" -print0 | xargs -0 -n1 php -l
         - find . -name "*.json" -not -path "./tgui/node_modules/*" -print0 | xargs -0 python3 ./tools/json_verifier.py
         - chmod +rwx tools/travis/build_tgui.sh
@@ -38,12 +42,16 @@ matrix:
         directories:
           - $HOME/BYOND
       install:
+        - chmod +x tools/travis/install_byond.sh
         - tools/travis/install_byond.sh
         - source $HOME/BYOND/byond/bin/byondsetup
       before_script:
+        - chmod +x tools/travis/template_dm_generator.py
         - tools/travis/template_dm_generator.py
       script:
+        - chmod +x tools/travis/dm.sh
         - tools/travis/dm.sh -DTRAVISBUILDING -DTRAVISTESTING -DALL_MAPS tgstation.dme
+        
 
     - name: "Compile and Run Tests"
       addons:
@@ -63,16 +71,24 @@ matrix:
           - $HOME/BYOND
           - $HOME/libmariadb
       install:
+        - chmod +x tools/travis/install_byond.sh
         - tools/travis/install_byond.sh
         - source $HOME/BYOND/byond/bin/byondsetup
+        - chmod +x tools/travis/install_libmariadb.sh
         - tools/travis/install_libmariadb.sh
+        - chmod +x tools/travis/install_rust_g.sh
         - tools/travis/install_rust_g.sh
       before_script:
         - mysql -u root -e 'CREATE DATABASE tg_travis;'
         - mysql -u root tg_travis < SQL/tgstation_schema.sql
         - mysql -u root -e 'CREATE DATABASE tg_travis_prefixed;'
         - mysql -u root tg_travis_prefixed < SQL/tgstation_schema_prefixed.sql
+        - chmod +x tools/travis/build_bsql.sh
         - tools/travis/build_bsql.sh
       script:
+        - chmod -R 777 ./
+        - chmod +x tools/travis/dm.sh
         - tools/travis/dm.sh -DTRAVISBUILDING tgstation.dme || travis_terminate 1
+        - chmod +x tools/travis/run_server.sh
+        - chmod +x tools/deploy.sh
         - tools/travis/run_server.sh
