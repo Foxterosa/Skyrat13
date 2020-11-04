@@ -42,6 +42,7 @@ matrix:
         directories:
           - $HOME/BYOND
       install:
+        - chmod +x tools/travis/install_byond.sh
         - tools/travis/install_byond.sh
         - source $HOME/BYOND/byond/bin/byondsetup
       before_script:
@@ -67,9 +68,12 @@ matrix:
           - $HOME/BYOND
           - $HOME/libmariadb
       install:
+        - chmod +x tools/travis/install_byond.sh
         - tools/travis/install_byond.sh
         - source $HOME/BYOND/byond/bin/byondsetup
+        - chmod +x tools/travis/install_libmariadb.sh
         - tools/travis/install_libmariadb.sh
+        - chmod +x tools/travis/install_rust_g.sh
         - tools/travis/install_rust_g.sh
       before_script:
         - mysql -u root -e 'CREATE DATABASE tg_travis;'
@@ -79,4 +83,5 @@ matrix:
         - tools/travis/build_bsql.sh
       script:
         - tools/travis/dm.sh -DTRAVISBUILDING tgstation.dme || travis_terminate 1
+        - chmod +x tools/travis/run_server.sh
         - tools/travis/run_server.sh
