@@ -17,8 +17,8 @@ matrix:
             - python3-pip
             - python3-setuptools
       install:
-        - tools/travis/install_build_tools.sh
-        - tools/travis/install_dreamchecker.sh
+        - chmod +x tools/travis/install_build_tools.sh
+        - chmod +x tools/travis/install_dreamchecker.sh
       script:
         - tools/travis/check_filedirs.sh tgstation.dme
         - tools/travis/check_changelogs.sh
