@@ -47,7 +47,7 @@ matrix:
         - source $HOME/BYOND/byond/bin/byondsetup
       before_script:
         - chmod +x tools/travis/template_dm_generator.py
-        - chmod +x tools/travis/template_dm_generator.py
+        - tools/travis/template_dm_generator.py
       script:
         - chmod +x tools/travis/dm.sh
         - tools/travis/dm.sh -DTRAVISBUILDING -DTRAVISTESTING 
