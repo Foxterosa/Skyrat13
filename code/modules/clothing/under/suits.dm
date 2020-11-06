@@ -116,3 +116,20 @@
 /obj/item/clothing/under/suit/polychromic/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/polychromic, list("#FFFFFF", "#FFFFFF", "#808080"), 3)
+
+
+//Manaos
+
+/obj/item/clothing/under/suit/redsuit
+	name = "traje rojo"
+	desc = "Un elegante traje con una camisa roja. HeLlTaKeR rEFeReNcIa?"
+	icon_state = "redsuit"
+	item_state = "redsuit"
+	can_adjust = TRUE
+
+/obj/item/clothing/under/suit/redsuit/redskirt
+	name = "traje rojo con falda"
+	desc = "Un elegante traje con una camisa roja y una falda. HeLlTaKeR rEFeReNcIa?"
+	icon_state = "redsuitskirt"
+	item_state = "redsuitskirt"
+	can_adjust = TRUE

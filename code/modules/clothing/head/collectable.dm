@@ -160,3 +160,12 @@
 	item_state = "swat"
 	resistance_flags = NONE
 	flags_inv = HIDEHAIR
+
+
+//Manaos
+
+/obj/item/clothing/head/collectable/bow
+	name = "moño rojo"
+	desc = "Solo un bonito moño rojo para el cabello."
+	icon_state = "bow"
+	dynamic_hair_suffix = ""
