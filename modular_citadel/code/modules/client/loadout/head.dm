@@ -188,3 +188,11 @@
 	name = "white kepi"
 	category = SLOT_HEAD
 	path = /obj/item/clothing/head/kepi
+
+
+//Manaos
+
+/datum/gear/bow
+	name = "Moño rojo"
+	category = SLOT_HEAD
+	path = /obj/item/clothing/head/collectable/bow

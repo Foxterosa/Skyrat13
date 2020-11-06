@@ -259,7 +259,7 @@
 	category = SLOT_W_UNIFORM
 	path = /obj/item/clothing/under/misc/polyjumpsuit
 	cost = 2
-	
+
 /datum/gear/polyskirt
 	name = "Polychromic Jumpskirt"
 	category = SLOT_W_UNIFORM
@@ -271,7 +271,7 @@
 	category = SLOT_W_UNIFORM
 	path = /obj/item/clothing/under/misc/poly_shirt
 	cost = 3
-	
+
 /datum/gear/polypleated
 	name = "Polychromic Pleated Sweaterskirt"
 	category = SLOT_W_UNIFORM
@@ -564,3 +564,16 @@
 	category = SLOT_W_UNIFORM
 	path = /obj/item/clothing/under/costume/cheongsam/red
 	cost = 3
+
+
+//Manaos
+
+/datum/gear/redsuit
+	name = "Traje rojo, femenino"
+	category = SLOT_W_UNIFORM
+	path = /obj/item/clothing/under/suit/redsuit
+
+/datum/gear/redskirt
+	name = "Traje rojo con falda, femenino"
+	category = SLOT_W_UNIFORM
+	path = /obj/item/clothing/under/suit/redsuit/redskirt

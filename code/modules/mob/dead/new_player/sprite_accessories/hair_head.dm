@@ -802,3 +802,10 @@
 /datum/sprite_accessory/hair/ziegler
 	name = "Ziegler"
 	icon_state = "hair_ziegler"
+
+
+//Manaos
+
+/datum/sprite_accessory/hair/cerberus
+	name = "Cerberus"
+	icon_state = "hair_cerberus"
