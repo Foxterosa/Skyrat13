@@ -577,7 +577,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		if (CONFIG_GET(flag/panic_bunker) && !holder && !GLOB.deadmins[ckey] && !(ckey in GLOB.bunker_passthrough))
 			log_access("Failed Login: [key] - [address] - New account attempting to connect during panic bunker") //skyrat-edit
 			message_admins("<span class='adminnotice'>Failed Login: [key] - [address] - New account attempting to connect during panic bunker</span>") //skyrat-edit
-			to_chat(src, {"<span class='notice'>Hi! We have temporarily enabled safety measures that prevents new players from joining currently.<br>Please try again later, or contact a staff on Discord if you have any questions. <br> <br> To join our community, check out our Discord! To gain full access to our Discord, read the rules and post a request in the #access-requests channel under the \"Landing Zone\" category in the Discord server linked here: <a href='https://discord.gg/6RpdCgR'>https://discord.gg/6RpdCgR</a></span>"}) //skyrat-edit
+			to_chat(src, {"<span class='notice'> Saludos! hemos activado medidas de seguridad que previenen el ingreso de nuevos jugadores no registrados.<br> Por suerte, hay un método de registro. <br> <br> Para unirte a la comunidad, registrate en nuestro Discord! Para ganar el acceso total al discord, lee las reglas y pide un ticket posteriormente en un canal dedicado. \"Landing Zone\" el area pública es esta: <a href='https://discord.com/invite/Cp8httq'>https://discord.com/invite/Cp8httq</a></span>"}) //skyrat-edit - Fox Edit
 			var/list/connectiontopic_a = params2list(connectiontopic)
 			var/list/panic_addr = CONFIG_GET(string/panic_server_address)
 			if(panic_addr && !connectiontopic_a["redirect"])
