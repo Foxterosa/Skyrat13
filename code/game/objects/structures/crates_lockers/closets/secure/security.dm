@@ -179,6 +179,7 @@
 	..()
 	new /obj/item/clothing/under/rank/security/detective(src)
 	new /obj/item/clothing/under/rank/security/detective/skirt(src)
+	new /obj/item/clothing/mask/gas/sechailer(src)
 	new /obj/item/clothing/suit/det_suit(src)
 	new /obj/item/clothing/head/fedora/det_hat(src)
 	new /obj/item/clothing/gloves/color/black(src)
